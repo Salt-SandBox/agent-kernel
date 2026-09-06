@@ -24,6 +24,7 @@ def search_agent_kernel_docs(query: str) -> Dict[str, object]:
     """
 
     if not query or len(query.strip()) < 2:
+        print(1)
         return {
             "error": "Invalid query",
             "message": "Please provide a meaningful search query (at least 2 characters).",
